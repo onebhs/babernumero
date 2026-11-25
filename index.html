@@ -110,6 +110,8 @@
         <a href="#packages" class="hover:text-amber-400 transition" data-i18n="navPackages">Packages</a>
         <a href="#planets" class="hover:text-amber-400 transition" data-i18n="navPlanets">1-9 Destiny Wheel</a>
         <a href="#social" class="hover:text-amber-400 transition" data-i18n="navSocial">Official Links</a>
+        <a href="#booking" class="hover:text-amber-400 transition">Book Consultation</a>
+        <a href="#faq" class="hover:text-amber-400 transition">FAQ</a>
       </nav>
 
       <!-- Language Toggle & Direct WhatsApp CTA -->
@@ -912,6 +914,81 @@
       </div>
     </section>
 
+    <!-- SECTION 6: CONSULTATION BOOKING FORM -->
+    <section id="booking" class="py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto scroll-mt-24">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-amber-400 text-xs font-bold tracking-widest uppercase block mb-2">BOOK YOUR CONSULTATION</span>
+        <h2 class="cinzel text-2xl sm:text-4xl font-extrabold gold-gradient-text">Consultation Booking</h2>
+        <p class="text-slate-300 text-sm sm:text-base mt-2">Form bharein — WhatsApp khul jayega, aapka message pehle se likha hoga. Bas Send dabayein.</p>
+        <p class="text-amber-200/80 text-xs sm:text-sm mt-3">Reply within 24–48 hours • 100% private &amp; confidential • WhatsApp: 03305412777</p>
+      </div>
+
+      <div class="royal-card rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto">
+        <div class="space-y-5">
+          <div>
+            <label for="bkName" class="block text-sm font-semibold text-amber-200 mb-2">Aapka Naam *</label>
+            <input id="bkName" type="text" placeholder="e.g. Ahmed Khan" class="w-full px-4 py-3.5 rounded-xl bg-[#040B16]/90 border border-amber-500/40 text-white focus:outline-none focus:border-amber-400 text-sm sm:text-base" />
+          </div>
+          <div>
+            <label for="bkDob" class="block text-sm font-semibold text-amber-200 mb-2">Date of Birth *</label>
+            <input id="bkDob" type="date" class="w-full px-4 py-3.5 rounded-xl bg-[#040B16]/90 border border-amber-500/40 text-white focus:outline-none focus:border-amber-400 text-sm sm:text-base" />
+          </div>
+          <div>
+            <label for="bkQuestion" class="block text-sm font-semibold text-amber-200 mb-2">Aapka Sawal *</label>
+            <textarea id="bkQuestion" rows="3" placeholder="e.g. Meri naukri kab lagegi? Ya business ke baare mein sawal..." class="w-full px-4 py-3.5 rounded-xl bg-[#040B16]/90 border border-amber-500/40 text-white focus:outline-none focus:border-amber-400 text-sm sm:text-base"></textarea>
+          </div>
+          <div>
+            <label for="bkPackage" class="block text-sm font-semibold text-amber-200 mb-2">Package Select Karein *</label>
+            <select id="bkPackage" class="w-full px-4 py-3.5 rounded-xl bg-[#040B16]/90 border border-amber-500/40 text-white focus:outline-none focus:border-amber-400 text-sm sm:text-base">
+              <option value="">— Package select karein —</option>
+              <optgroup label="Main Consultation Packages">
+                <option value="Silver (Rs 3,000) — 1 Sawal">Silver — Rs 3,000 (1 Sawal)</option>
+                <option value="Gold (Rs 5,000) — 2 Sawal + 15-min Call">Gold — Rs 5,000 (2 Sawal + 15-min Call) ★ Most Popular</option>
+                <option value="Diamond (Rs 8,000) — Full Report + Marriage Match + 30-min Call">Diamond — Rs 8,000 (Full Report + Marriage Match + 30-min Call)</option>
+                <option value="Platinum (Rs 10,000) — Numerology + Astrology Chart + Yearly + 1-hour Call">Platinum — Rs 10,000 (Numerology + Astrology Chart + Yearly + 1-hour Call)</option>
+              </optgroup>
+              <optgroup label="Marriage Packages">
+                <option value="Basic Match Making (Rs 3,500)">Basic Match Making — Rs 3,500</option>
+                <option value="Complete Match Making (Rs 5,500)">Complete Match Making — Rs 5,500 ★ Most Popular</option>
+                <option value="Family / Multi-Rishta (Rs 8,500)">Family / Multi-Rishta — Rs 8,500</option>
+              </optgroup>
+              <optgroup label="Name Packages">
+                <option value="Personal Name Correction (Rs 3,000)">Personal Name Correction — Rs 3,000</option>
+                <option value="New Baby Lucky Name (Rs 4,500)">New Baby Lucky Name — Rs 4,500 ★ Most Popular</option>
+                <option value="Business / Brand Name (Rs 7,000)">Business / Brand Name — Rs 7,000</option>
+              </optgroup>
+              <optgroup label="Mobile Packages">
+                <option value="Current Mobile Number Analysis (Rs 3,000)">Current Mobile Number Analysis — Rs 3,000</option>
+                <option value="New Lucky Number Selection (Rs 4,500)">New Lucky Number Selection — Rs 4,500 ★ Most Popular</option>
+              </optgroup>
+            </select>
+          </div>
+          <button type="button" onclick="sendBookingToWhatsApp()" class="w-full gold-btn py-3.5 px-4 rounded-xl text-center text-sm sm:text-base font-bold">💬 WhatsApp par Bhejein</button>
+          <p id="bookingNote" class="hidden text-center text-xs sm:text-sm text-amber-200"></p>
+          <p class="text-center text-[11px] sm:text-xs text-slate-400">Aapki details 100% private rehti hain — kisi se share nahi ki jatin.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: FAQ CHATBOT -->
+    <section id="faq" class="py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto scroll-mt-24">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-amber-400 text-xs font-bold tracking-widest uppercase block mb-2">FREQUENTLY ASKED QUESTIONS</span>
+        <h2 class="cinzel text-2xl sm:text-4xl font-extrabold gold-gradient-text">Sawal Jawab — FAQ Assistant</h2>
+        <p class="text-slate-300 text-sm sm:text-base mt-2">Neeche sawal likhein ya aik sawal dabayein — foran jawab milega. Numerology reading ke liye booking form bharein.</p>
+      </div>
+
+      <div class="royal-card rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto">
+        <div id="faqChat" class="space-y-3 max-h-80 overflow-y-auto pr-1 mb-5"></div>
+        <div class="flex flex-wrap gap-2 mb-4" id="faqChips"></div>
+        <div class="flex gap-2">
+          <input id="faqInput" type="text" placeholder="Apna sawal likhein..." class="flex-1 px-4 py-3 rounded-xl bg-[#040B16]/90 border border-amber-500/40 text-white focus:outline-none focus:border-amber-400 text-sm sm:text-base" onkeydown="if(event.key==='Enter'){askFaq();}" />
+          <button type="button" onclick="askFaq()" class="gold-btn px-5 py-3 rounded-xl text-sm font-bold shrink-0">Bhejein</button>
+        </div>
+        <p class="text-center text-[11px] sm:text-xs text-slate-400 mt-4">Ye assistant sirf aam maloomat deta hai — fees, packages, tareeqa, payment. Reading aur zaicha Baber Shaykh khud karte hain.</p>
+      </div>
+    </section>
+
   </main>
 
   <!-- Footer -->
@@ -1422,11 +1499,106 @@
       draw();
     }
 
+    // ---- Consultation Booking Form -> WhatsApp ----
+    function sendBookingToWhatsApp() {
+      const name = document.getElementById('bkName').value.trim();
+      const dob = document.getElementById('bkDob').value;
+      const q = document.getElementById('bkQuestion').value.trim();
+      const pkg = document.getElementById('bkPackage').value;
+      const note = document.getElementById('bookingNote');
+      if (!name || !dob || !q || !pkg) {
+        note.textContent = 'Barah-e-karam naam, date of birth, sawal aur package — chaaron bhar dein.';
+        note.classList.remove('hidden');
+        return;
+      }
+      const parts = dob.split('-');
+      const dobText = parts.length === 3 ? parts[2] + '-' + parts[1] + '-' + parts[0] : dob;
+      const msg = 'Assalam-o-Alaikum Baber Shaykh Sahab,\nMera naam ' + name + ' hai.\nMeri date of birth ' + dobText + ' hai.\nMera sawal: ' + q + '\nMujhe ' + pkg + ' package chahiye.';
+      window.open('https://wa.me/923305412777?text=' + encodeURIComponent(msg), '_blank');
+      note.textContent = 'WhatsApp khul gaya hai — message pehle se likha hai, bas Send dabayein.';
+      note.classList.remove('hidden');
+    }
+
+    // ---- FAQ Assistant (rule-based, no AI, no readings) ----
+    const FAQ_DATA = [
+      { keys: ['fee', 'fees', 'price', 'charges', 'kitne', 'package', 'packages', 'rate'], q: 'Fees / package kitne ka hai?', a: 'Main packages: Silver Rs 3,000 (1 sawal), Gold Rs 5,000 (2 sawal + 15-min call) — sab se popular, Diamond Rs 8,000 (full report + marriage match + 30-min call), Platinum Rs 10,000 (numerology + astrology chart + yearly + 1-hour call). Shadi, naam aur mobile ke alag packages bhi hain — upar Packages section mein dekh lein. Jawab 24–48 ghanton mein milta hai.' },
+      { keys: ['kaise', 'process', 'tareeqa', 'consultation', 'kaam'], q: 'Consultation kaise hoti hai?', a: 'Booking form bharein (naam, date of birth, sawal, package) — WhatsApp par message chala jayega. Baber Shaykh khud jawab dete hain: voice notes ya call par. Koi form ya app download nahi karni.' },
+      { keys: ['payment', 'pay', 'easypaisa', 'jazzcash', 'nayapay', 'paisa', 'paise'], q: 'Payment kaise karun?', a: 'EasyPaisa / JazzCash / NayaPay — number 03331361696 (Babar Shaikh). Payment ke baad screenshot WhatsApp number 03305412777 par share kar dein.' },
+      { keys: ['kab', 'time', 'der', 'delay', 'jawab'], q: 'Jawab kab milega?', a: '24–48 ghanton mein jawab mil jata hai. Silver/Gold aam tor par jaldi, Diamond/Platinum report ke sath 48 ghante tak.' },
+      { keys: ['private', 'privacy', 'secret', 'confidential'], q: 'Meri details private rahengi?', a: 'Ji, 100% private. Aapki naam, date of birth aur sawal kisi se share nahi kiye jate.' },
+      { keys: ['guarantee', '100%', 'yakeen', 'pakka'], q: 'Kya 100% guarantee hai?', a: '100% guarantee kehne wale jhoot bolte hain — taqdeer sirf Allah badalta hai. Baber Shaykh sirf adad ki roshni mein rehnumai karte hain.' },
+      { keys: ['shadi', 'marriage', 'rishta', 'match'], q: 'Shadi / rishta match karwana hai?', a: 'Shadi packages: Basic Match Making Rs 3,500, Complete Rs 5,500 (sab se popular), Family / Multi-Rishta Rs 8,500. Details Marriage Packages section mein hain — booking form se bhi select kar sakte hain.' },
+      { keys: ['naam', 'name', 'spelling'], q: 'Naam ki durusti / baby ka naam?', a: 'Name packages: Personal Name Correction Rs 3,000, New Baby Lucky Name Rs 4,500 (sab se popular), Business / Brand Name Rs 7,000. Details Name Packages section mein hain.' },
+      { keys: ['mobile', 'number', 'sim'], q: 'Mobile number lucky hai?', a: 'Mobile packages: Current Mobile Number Analysis Rs 3,000, New Lucky Number Selection Rs 4,500. Website par Lucky Mobile checker se bhi khud check kar sakte hain.' },
+      { keys: ['contact', 'rabta', 'whatsapp', 'number'], q: 'Rabta kaise karun?', a: 'WhatsApp: 03305412777. Channel: whatsapp.com/channel/0029VatH2ph4IBhDlSVRMX1P — rozana remedies aur updates ke liye join karein.' }
+    ];
+    const FAQ_FALLBACK = 'Is sawal ka jawab yahan nahi hai. Barah-e-karam WhatsApp par poochein — Baber Shaykh khud jawab denge: ';
+    function faqAddMsg(text, who) {
+      const chat = document.getElementById('faqChat');
+      const div = document.createElement('div');
+      div.className = who === 'user'
+        ? 'ml-auto max-w-[85%] px-4 py-2.5 rounded-2xl rounded-br-sm bg-amber-500/90 text-slate-950 text-sm font-medium'
+        : 'mr-auto max-w-[85%] px-4 py-2.5 rounded-2xl rounded-bl-sm bg-[#040B16]/90 border border-amber-500/30 text-slate-200 text-sm';
+      div.textContent = text;
+      chat.appendChild(div);
+      chat.scrollTop = chat.scrollHeight;
+    }
+    function faqAnswer(text) {
+      const t = text.toLowerCase();
+      let best = null, bestScore = 0;
+      FAQ_DATA.forEach(item => {
+        let score = 0;
+        item.keys.forEach(k => { if (t.indexOf(k) !== -1) score++; });
+        if (score > bestScore) { bestScore = score; best = item; }
+      });
+      return best ? best.a : null;
+    }
+    function askFaq() {
+      const input = document.getElementById('faqInput');
+      const text = input.value.trim();
+      if (!text) return;
+      faqAddMsg(text, 'user');
+      input.value = '';
+      const ans = faqAnswer(text);
+      if (ans) {
+        faqAddMsg(ans, 'bot');
+      } else {
+        faqAddMsg(FAQ_FALLBACK, 'bot');
+        const chat = document.getElementById('faqChat');
+        const link = document.createElement('a');
+        link.href = 'https://wa.me/923305412777?text=' + encodeURIComponent('Assalam-o-Alaikum, mera sawal hai: ' + text);
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.className = 'inline-block mt-1 mr-auto px-4 py-2 rounded-full bg-emerald-500/20 border border-emerald-400/50 text-emerald-300 text-xs font-bold';
+        link.textContent = 'WhatsApp par Poochein: 03305412777';
+        chat.appendChild(link);
+        chat.scrollTop = chat.scrollHeight;
+      }
+    }
+    function initFaqBot() {
+      const chat = document.getElementById('faqChat');
+      if (!chat) return;
+      faqAddMsg('Assalam-o-Alaikum! Main FAQ Assistant hun. Fees, packages, payment, tareeqa — koi bhi aam sawal poochein. Neeche sawal dabayein ya likhein.', 'bot');
+      const chips = document.getElementById('faqChips');
+      FAQ_DATA.slice(0, 6).forEach(item => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'px-3 py-1.5 rounded-full border border-amber-400/50 bg-amber-500/10 hover:bg-amber-500/20 text-amber-200 text-xs font-semibold transition';
+        b.textContent = item.q;
+        b.onclick = function() {
+          document.getElementById('faqInput').value = item.q;
+          askFaq();
+        };
+        chips.appendChild(b);
+      });
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
       calculateLoShuAndName();
       checkMobileAndVehicle();
       renderPlanets(1);
       initCosmos();
+      initFaqBot();
     });
   </script>
 </body>
